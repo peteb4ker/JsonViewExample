@@ -3,11 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mangofactory.jsonView</groupId>
 	<artifactId>JsonViewExample</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JsonViewExample </name>
 	<properties>
-		<spring.version>3.1.2.RELEASE</spring.version>
+		<spring.version>3.2.3.RELEASE</spring.version>
+		<source.version>1.7</source.version>
+        <target.version>1.7</target.version>
 	</properties>
 	<repositories>
 		<repository>
