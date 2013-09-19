@@ -46,6 +46,7 @@ public class ViewInjectingReturnValueHandler implements
     */
    private Class<? extends BaseView> getDeclaredViewClass(MethodParameter returnType) {
        ResponseView annotation = returnType.getMethodAnnotation(ResponseView.class);
+
        if (annotation != null)
        {
            return annotation.value();
@@ -55,6 +56,7 @@ public class ViewInjectingReturnValueHandler implements
    }
    private Object wrapResult(Object result, Class<? extends BaseView> viewClass) {
        PojoView response = new PojoView(result, viewClass);
+       
        return response;
    }
 }

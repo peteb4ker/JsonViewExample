@@ -2,8 +2,6 @@ package com.mangofactory.jsonview;
 
 import java.util.List;
 
-import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
@@ -20,7 +18,6 @@ import com.google.common.collect.Lists;
  * @author martypitt
  *
  */
-@Slf4j
 public class JsonViewSupportFactoryBean implements InitializingBean {
 
     @Autowired
@@ -39,7 +36,6 @@ public class JsonViewSupportFactoryBean implements InitializingBean {
                 ViewInjectingReturnValueHandler decorator = new ViewInjectingReturnValueHandler(handler);
                 int index = handlers.indexOf(handler);
                 handlers.set(index, decorator);
-                log.info("JsonView decorator support wired up");
                 break;
             }
         }        
