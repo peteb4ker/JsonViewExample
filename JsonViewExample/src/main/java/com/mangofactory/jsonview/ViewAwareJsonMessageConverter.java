@@ -43,7 +43,7 @@ public class ViewAwareJsonMessageConverter extends
         JsonEncoding encoding = getJsonEncoding(outputMessage.getHeaders().getContentType());
         ObjectWriter writer = getWriterForView(view.getView());
         JsonGenerator jsonGenerator = 
-                writer.getFactory().createJsonGenerator(outputMessage.getBody(), encoding);
+                writer.getFactory().createGenerator(outputMessage.getBody(), encoding);
         try {
             writer.writeValue(jsonGenerator, view.getData());
         }
