@@ -4,7 +4,7 @@
 	<groupId>com.mangofactory.jsonView</groupId>
 	<artifactId>JsonViewExample</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>JsonViewExample </name>
 	<properties>
 		<spring.version>3.2.3.RELEASE</spring.version>
